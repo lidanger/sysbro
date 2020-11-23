@@ -1,3 +1,8 @@
+sysbro (0.9.9-20201123) unstable; urgency=medium
+  * 临时修复垃圾清理页面复选框无法选择问题
+
+ -- lidanger <lidanger@outlook.com> Mon, 23 Nov 2020 12:12:00 +0800
+
 sysbro (0.9.9) unstable; urgency=medium
   * 首页更改为资源监控
   * 工具箱加入屏幕检查工具
