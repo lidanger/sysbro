@@ -23,6 +23,9 @@ ScannedWidget::ScannedWidget(QWidget *parent)
     m_treeWidget->setHeaderLabels({tr("File Name"), tr("File Size")});
     m_treeWidget->setContextMenuPolicy(Qt::CustomContextMenu);
 
+    auto indicatorStyle = QString("QTreeWidget::indicator { left: %1px; }QTreeWidget::indicator::unchecked { border-radius: 8px; background-color: #b3ac98; }").arg(m_treeWidget->width() - 230);
+    m_treeWidget->setStyleSheet(m_treeWidget->styleSheet() + indicatorStyle);
+
     layout->addWidget(m_treeWidget);
     layout->setContentsMargins(10, 0, 20, 0);
     setLayout(layout);
